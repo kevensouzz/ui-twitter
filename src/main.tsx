@@ -13,42 +13,42 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 
         <nav className='main-navigation'>
           <a href="">
-            <House weight='fill' />
+            <House />
              Home
              </a>
 
           <a href="">
-            <Hash weight='fill' />
+            <Hash />
             Explorer
             </a>
             
           <a href="">
-            <Bell weight='fill' />
+            <Bell />
             Notification
             </a>
 
           <a href="">
-            <Envelope weight='fill' />
+            <Envelope />
             Messages
             </a>
 
           <a href="">
-            <BookmarkSimple weight='fill' />
+            <BookmarkSimple />
             BookMarks
             </a>
 
           <a href="">
-            <FileText weight='fill' />
+            <FileText />
             Lists
             </a>
 
           <a href="">
-            <User weight='fill' />
+            <User />
             Profile
             </a>
 
           <a href="">
-            <DotsThreeCircle weight="fill" />
+            <DotsThreeCircle />
             More
             </a>
         </nav>
