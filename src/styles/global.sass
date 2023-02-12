@@ -1,5 +1,5 @@
 $twitter-blue: #1da1f2
-    
+
 *
     margin: 0
     padding: 0
@@ -8,6 +8,11 @@ $twitter-blue: #1da1f2
 body
     color: #0f1419
     -webkit-font-smoothing: antialiased
+    .separator
+        background: #f7f9fa
+        border-top: 1px solid #ebeef0
+        border-bottom: 1px solid #ebeef0
+        height: 0.75rem
     button
         cursor: pointer
     a
@@ -55,3 +60,49 @@ body
     .content
         border-left: 1px solid #ebeef0 
         border-right: 1px solid #ebeef0
+        .timeLine-header
+            padding: 1.5rem 1.25rem
+            display: flex
+            align-items: center
+            justify-content: space-between
+            font-size: 1.25rem
+            font-weight: 700
+            border-bottom: 1px solid #ebeef0
+            svg
+                width: 1.5rem
+                height: 1.5rem
+                color: $twitter-blue
+        .new-tweet-form
+            padding: 1.5rem
+            display: flex
+            flex-direction: column
+            gap: 0.5rem
+            label
+                display: flex
+                gap: 0.75rem
+                img
+                    width: 3rem
+                    height: 3rem
+                    border-radius: 50%
+                textarea
+                    flex: 1
+                    border: 0
+                    font-size: 1.25rem
+                    font-weight: 500
+                    margin-top: 0.75rem
+                    resize: none
+                    &:focus
+                        outline: none
+                    &::placeholder
+                        color: #5b7083
+            button[type=submit]
+                margin-left: auto
+                background: $twitter-blue
+                border-radius: 99px
+                padding: 0.75rem 1.5rem
+                color: #fff
+                font-size: 1rem
+                font-weight: 900
+                border: 0
+                &:hover
+                    filter: brightness(0.9)
