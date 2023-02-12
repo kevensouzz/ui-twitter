@@ -26,7 +26,9 @@ const TimeLine = () => {
               <textarea id='tweet' placeholder="what's happening?" value={newTweet} onChange={(event) => setNewTweet(event.target.value)} />
             </label>
 
-            <button type="submit">Tweet</button>
+            <button type="submit">
+              <span>Tweet</span>
+            </button>
           </form>
 
           <Separator />
