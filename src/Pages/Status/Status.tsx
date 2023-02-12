@@ -1,4 +1,3 @@
-import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, useState } from "react"
 import Header from "../../components/Header/Header"
 import Separator from "../../components/Separator/Separator"
@@ -7,9 +6,7 @@ import './styles/Status.css'
 
 const Status = () => {
   const [newAnswer, setNewAnswer] = useState('')
-  const [answers, setAnswers] = useState([
-    "Olá Keven! :D"  
-  ])
+  const [answers, setAnswers] = useState(['Olá, eu mesmo! :D'])
 
   function createNewAnswer(event: FormEvent) {
     event.preventDefault()
@@ -32,7 +29,6 @@ const Status = () => {
       </label>
 
       <button type="submit">
-        <PaperPlaneRight />
         <span>Answer</span>
         </button>
     </form>
