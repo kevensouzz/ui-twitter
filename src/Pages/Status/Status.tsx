@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, useState } from "react"
 import Header from "../../components/Header/Header"
 import Separator from "../../components/Separator/Separator"
@@ -30,7 +31,10 @@ const Status = () => {
         <textarea id='tweet' placeholder="Tweet your answer" value={newAnswer} onChange={(event) => setNewAnswer(event.target.value)} />
       </label>
 
-      <button type="submit">Answer</button>
+      <button type="submit">
+        <PaperPlaneRight />
+        <span>Answer</span>
+        </button>
     </form>
 
     {answers.map(answer => {
