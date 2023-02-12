@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import TimeLine from "./Pages/Timeline";
+import TimeLine from "./Pages/Timeline/Timeline";
 
 const Router = createBrowserRouter([
     {
