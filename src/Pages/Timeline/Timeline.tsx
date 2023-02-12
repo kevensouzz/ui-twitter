@@ -10,7 +10,6 @@ const tweets = [
 const TimeLine = () => {
   return (
     <main className='timeLine'>
-
           <Header title='Home' />
 
           <form className='new-tweet-form'>

@@ -21,17 +21,17 @@ const Tweet = (props: TweetProps) => {
                 <div className="tweet-content-footer">
                     <button type='button'>
                         <ChatCircle />
-                        72
+                        1
                     </button>
                     
                     <button type='button'>
                         <ArrowsClockwise />
-                        58
+                        0
                     </button>
 
                     <button type='button'>
                         <Heart />
-                        186
+                        82
                     </button>
                 </div>
             </div>
