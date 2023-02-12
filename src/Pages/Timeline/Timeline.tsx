@@ -6,7 +6,6 @@ import './styles/Timeline.css'
 
 const TimeLine = () => {
   const [newTweet, setNewTweet] = useState('')
-
   const [tweets, setTweets] = useState([
     'Olá mundo!'  
   ])

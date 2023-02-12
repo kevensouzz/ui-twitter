@@ -1,13 +1,21 @@
+import { FormEvent, useState } from "react"
 import Header from "../../components/Header/Header"
 import Separator from "../../components/Separator/Separator"
 import Tweet from "../../components/Tweet/Tweet"
 import './styles/Status.css'
 
-const answers = [
-    "Olá Keven! :D"
-]
-
 const Status = () => {
+  const [newAnswer, setNewAnswer] = useState('')
+  const [answers, setAnswers] = useState([
+    "Olá Keven! :D"  
+  ])
+
+  function createNewAnswer(event: FormEvent) {
+    event.preventDefault()
+    setAnswers([newAnswer, ...answers])
+    setNewAnswer('')
+  }
+
   return (
     <main className='Status'>
     <Header title='Tweet' />
@@ -16,10 +24,10 @@ const Status = () => {
 
     <Separator />
 
-    <form className='answer-tweet-form'>
+    <form onSubmit={createNewAnswer} className='answer-tweet-form'>
       <label htmlFor="tweet">
         <img src="https://github.com/kevensouzz.png" alt="Keven Souza" />
-        <textarea id='tweet' placeholder="Tweet your answer" />
+        <textarea id='tweet' placeholder="Tweet your answer" value={newAnswer} onChange={(event) => setNewAnswer(event.target.value)} />
       </label>
 
       <button type="submit">Answer</button>
