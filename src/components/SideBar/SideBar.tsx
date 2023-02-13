@@ -1,5 +1,5 @@
 import TwitterLogo from '../../assets/logo-twitter.svg'
-import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, User } from 'phosphor-react'
+import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Pencil, User } from 'phosphor-react'
 import './styles/SideBar.css'
 import { NavLink } from 'react-router-dom'
 
@@ -51,6 +51,7 @@ const SideBar = () => {
         </nav>
 
         <button className='new-tweet'>
+          <Pencil />
           <span>Tweet</span>
         </button>
       </aside>
