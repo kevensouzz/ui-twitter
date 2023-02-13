@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from 'phosphor-react'
 import { FormEvent, useState } from 'react'
 import Header from '../../components/Header/Header'
 import Separator from '../../components/Separator/Separator'
@@ -27,6 +28,7 @@ const TimeLine = () => {
             </label>
 
             <button type="submit">
+              <PaperPlaneRight />
               <span>Tweet</span>
             </button>
           </form>

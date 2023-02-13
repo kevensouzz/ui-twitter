@@ -26,17 +26,34 @@ $twitter-blue: #1da1f2
             &::placeholder
                 color: #5b7083
                 font-weight: 500
+
+@media ( min-width: 780px )
     button[type=submit]
-        margin-left: auto
         background: $twitter-blue
         border-radius: 99px
         padding: 0.75rem 1.5rem
         color: #fff
-        font-size: 1rem
-        font-weight: 900
         border: 0
         &:hover
             filter: brightness(0.9)
         span
             font-size: 1rem
             font-weight: 900
+        svg
+            display: none
+
+@media ( max-width: 780px )
+    button[type=submit]
+        background: $twitter-blue
+        border-radius: 50%
+        padding: 0.75rem
+        color: #fff
+        border: 0
+        &:hover
+            filter: brightness(0.9)
+        span
+            display: none
+        svg
+            display: block
+            width: 1.5rem
+            height: 1.5rem

@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, useState } from "react"
 import Header from "../../components/Header/Header"
 import Separator from "../../components/Separator/Separator"
@@ -29,6 +30,7 @@ const Status = () => {
       </label>
 
       <button type="submit">
+        <PaperPlaneRight />
         <span>Answer</span>
         </button>
     </form>
