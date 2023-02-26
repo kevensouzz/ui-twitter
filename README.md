@@ -6,8 +6,6 @@ Interface de usuário do twitter desenvolvida com ReactJs e TypeScript.
 
 ![Design preview for the project](./src/assets/design-preview/preview.jpg)
 
-![Design preview for the project](./src/assets/design-preview/mobile-preview.jpg)
-
 </div>
 
 ## Ferramentas 📌
